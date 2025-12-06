@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting App</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+
+<header>
+    <h1>Greeting App</h1>
+</header>
+
+<section class="box">
+    <input type="text" id="name" placeholder="Enter your name">
+    <button onclick="greet()">Greet Me</button>
+    <p id="output"></p>
+</section>
+
+<script>
+function greet() {
+    let name = document.getElementById("name").value;
+    document.getElementById("output").innerText =
+        name ? `Hello, ${name}! Have a great day!` : "Please enter your name.";
+}
+</script>
+
+</body>
+</html>
